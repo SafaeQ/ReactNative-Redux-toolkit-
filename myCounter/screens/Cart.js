@@ -16,7 +16,7 @@ const CartView = () => {
     <>
         <View>
             <Text>Count : {count} </Text>
-            <PrimaryButton onPress={ () => {dispatch(increment())} } title={'+'} />
+            <Button onPress={ () => {dispatch(increment())} } title={'+'} />
             <PrimaryButton onPress={ () => {dispatch(decrement())} } title={'-'} />
         </View>
     </>
