@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { StyleSheet, Text, View, FlatList, Dimensions, ActivityIndicator, Pressable, Image } from 'react-native';
-
+import { Button } from 'react-bootstrap';
 
 import { decrement, increment } from './CartSlice'
 import PrimaryButton from '../components/PrimaryBtn'
@@ -16,8 +16,8 @@ const CartView = () => {
     <>
         <View>
             <Text>Count : {count} </Text>
-            <Button onPress={ () => {dispatch(increment())} } title={'+'} />
-            <PrimaryButton onPress={ () => {dispatch(decrement())} } title={'-'} />
+            <Button onClick={ () => {dispatch(increment())} }>+</Button>
+            <Button onPress={ () => {dispatch(decrement())} }>-</Button>
         </View>
     </>
   )
