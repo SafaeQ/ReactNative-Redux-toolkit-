@@ -29,9 +29,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         marginVertical: 20,
-    },
-    btn: {
         flexDirection: 'row',
-        flexWrap: 'wrap'
-    }
+    },
+
 })
