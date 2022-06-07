@@ -8,7 +8,7 @@ import PrimaryButton from '../components/PrimaryBtn'
 
 
 
-const CounterView = () => {
+const CartView = () => {
     const count = useSelector(state => state.counter.count)
     const dispatch = useDispatch()
 
@@ -23,4 +23,4 @@ const CounterView = () => {
   )
 }
 
-export default CounterView
+export default CartView
