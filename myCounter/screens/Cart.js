@@ -14,13 +14,24 @@ const CartView = () => {
 
   return (
     <>
-        <View>
-            <Text>Count : {count} </Text>
+        <View style={styles.container}>
             <Button onClick={ () => {dispatch(increment())} }>+</Button>
-            <Button onPress={ () => {dispatch(decrement())} }>-</Button>
+            <Text>Count : {count} </Text>
+            <Button onClick={ () => {dispatch(decrement())} }>-</Button>
         </View>
     </>
   )
 }
 
 export default CartView
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        marginVertical: 20,
+    },
+    btn: {
+        flexDirection: 'row',
+        flexWrap: 'wrap'
+    }
+})

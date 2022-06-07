@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { StyleSheet, Text, View, FlatList, Dimensions, ActivityIndicator, Pressable, Image } from 'react-native';
 
+import CartView from './Cart'
 //  styles
 
 import { basic, form} from "../constants/styles";
@@ -61,6 +62,7 @@ export default function Home( {navigation} ) {
             resizeMode='center'  style={{width: 131, height: 142}} />}
             
               <Text style={styles.title}>{item.name}</Text>
+              <CartView/>
         </View>
       </Pressable>
     </View>

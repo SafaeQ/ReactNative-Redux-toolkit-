@@ -8,8 +8,8 @@ import store from './app/store'
 export default function App() {
   return (
     <Provider store= {store}>
-      {/* <Home/> */}
-      <CartView/>
+      <Home/>
+      {/* <CartView/> */}
     </Provider>
   );
 }
