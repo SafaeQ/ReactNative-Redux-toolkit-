@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, FlatList, Dimensions, ActivityIndicator, Pressa
 
 //  styles
 
-import { basic, form} from "../constants/style";
+import { basic, form} from "../constants/styles";
 
 
 const numColumns = 1;
