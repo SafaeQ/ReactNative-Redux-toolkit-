@@ -61,8 +61,8 @@ export default function Home( {navigation} ) {
             source={ `http://127.0.0.1:9988/image/${item.image}` }
             resizeMode='center'  style={{width: 131, height: 142}} />}
             
-              <Text style={styles.title}>{item.name}</Text>
-              <CartView/>
+                <Text style={styles.title}>{item.name}</Text>
+                <CartView/>
         </View>
       </Pressable>
     </View>
